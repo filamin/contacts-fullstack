@@ -1,0 +1,303 @@
+{
+  "name": "client",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "core-js": "^3.6.5",
+    "vue": "^2.6.11",
+    "vue-axios": "^3.2.5",
+    "vue-router": "^3.5.2",
+    "vuex": "^3.6.2"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/eslint-config-airbnb": "^5.0.2",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-vue": "^6.2.2",
+    "less": "^3.13.1",
+    "less-loader": "^4.0.4",
+    "style-resources-loader": "^1.4.1",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended",
+      "@vue/airbnb"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {
+      "indent": [
+        "error",
+        2,
+        {
+          "SwitchCase": 1
+        }
+      ],
+      "complexity": [
+        "error",
+        8
+      ],
+      "camelcase": "off",
+      "no-mixed-operators": [
+        "error",
+        {
+          "groups": [
+            [
+              "+",
+              "-",
+              "*",
+              "/",
+              "%",
+              "**"
+            ],
+            [
+              "&",
+              "|",
+              "^",
+              "~",
+              "<<",
+              ">>",
+              ">>>"
+            ],
+            [
+              "==",
+              "!=",
+              "===",
+              "!==",
+              ">",
+              ">=",
+              "<",
+              "<="
+            ],
+            [
+              "&&",
+              "||"
+            ],
+            [
+              "in",
+              "instanceof"
+            ]
+          ],
+          "allowSamePrecedence": true
+        }
+      ],
+      "eol-last": [
+        "error",
+        "always"
+      ],
+      "quotes": [
+        "error",
+        "single"
+      ],
+      "no-extra-parens": [
+        "error",
+        "all",
+        {
+          "nestedBinaryExpressions": false
+        }
+      ],
+      "func-style": [
+        "error",
+        "declaration"
+      ],
+      "no-unsafe-negation": [
+        "error"
+      ],
+      "no-alert": [
+        "warn"
+      ],
+      "object-shorthand": [
+        "error",
+        "always"
+      ],
+      "no-console": [
+        "warn",
+        {
+          "allow": [
+            "error"
+          ]
+        }
+      ],
+      "no-var": [
+        "error"
+      ],
+      "semi": [
+        "error",
+        "always"
+      ],
+      "dot-notation": [
+        "error"
+      ],
+      "comma-dangle": [
+        "error",
+        {
+          "arrays": "always-multiline",
+          "objects": "always-multiline",
+          "imports": "never",
+          "exports": "never",
+          "functions": "never"
+        }
+      ],
+      "no-multiple-empty-lines": [
+        "error",
+        {
+          "max": 1
+        }
+      ],
+      "no-multi-spaces": [
+        "error"
+      ],
+      "padded-blocks": [
+        "error",
+        "never"
+      ],
+      "vars-on-top": [
+        "error"
+      ],
+      "no-unused-expressions": [
+        "error"
+      ],
+      "func-call-spacing": [
+        "error",
+        "never"
+      ],
+      "arrow-spacing": [
+        "error",
+        {
+          "before": true,
+          "after": true
+        }
+      ],
+      "arrow-body-style": [
+        "error",
+        "as-needed",
+        {
+          "requireReturnForObjectLiteral": true
+        }
+      ],
+      "block-spacing": [
+        "error",
+        "always"
+      ],
+      "space-in-parens": [
+        "error",
+        "never"
+      ],
+      "object-curly-spacing": [
+        "error",
+        "always"
+      ],
+      "space-before-function-paren": [
+        "error",
+        "never"
+      ],
+      "no-whitespace-before-property": [
+        "error"
+      ],
+      "array-bracket-spacing": [
+        "error",
+        "never"
+      ],
+      "keyword-spacing": [
+        "error"
+      ],
+      "key-spacing": [
+        "error"
+      ],
+      "space-before-blocks": [
+        "error",
+        "always"
+      ],
+      "eqeqeq": [
+        "error",
+        "always"
+      ],
+      "vue/attribute-hyphenation": [
+        2,
+        "always"
+      ],
+      "vue/no-side-effects-in-computed-properties": [
+        "error"
+      ],
+      "vue/html-end-tags": [
+        "error"
+      ],
+      "vue/html-indent": [
+        "error",
+        2
+      ],
+      "vue/v-bind-style": [
+        "error"
+      ],
+      "vue/no-multi-spaces": [
+        "error"
+      ],
+      "comma-spacing": [
+        "error",
+        {
+          "before": false,
+          "after": true
+        }
+      ],
+      "vue/no-reserved-keys": [
+        "error"
+      ],
+      "vue/return-in-computed-property": [
+        "error"
+      ],
+      "vue/mustache-interpolation-spacing": [
+        2,
+        "always"
+      ],
+      "vue/v-on-style": [
+        "error"
+      ],
+      "vue/order-in-components": [
+        2,
+        {
+          "order": [
+            "mixins",
+            "components",
+            "props",
+            "beforeCreate",
+            "created",
+            "beforeMount",
+            "mounted",
+            "beforeUpdate",
+            "updated",
+            "activated",
+            "deactivated",
+            "beforeDestroy",
+            "destroyed",
+            "data",
+            "computed",
+            "watch",
+            "methods"
+          ]
+        }
+      ]
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
