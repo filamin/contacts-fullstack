@@ -14,7 +14,7 @@ const auth = require('./routes/api/auth');
 
 app.use('/api/contacts', contacts);
 app.use('/api/auth', auth);
-git
+
 //Handle prod
 if(process.env.NODE_ENV === 'production') {
   app.use(express.static(__dirname + '/public/'));
